@@ -26,6 +26,19 @@
       color: white;
       padding: 70px 20px;
       text-align: center;
+      position: relative;
+    }
+
+    .trial-ribbon{
+      position:absolute;
+      top:20px;
+      right:20px;
+      background:#f59e0b;
+      color:white;
+      padding:8px 14px;
+      border-radius:999px;
+      font-weight:600;
+      font-size:14px;
     }
 
     .container {
@@ -48,6 +61,17 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: 600;
+    }
+
+    .badge{
+      display:inline-block;
+      background:#111827;
+      color:white;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      margin-right:6px;
+      margin-bottom:6px;
     }
 
     .stats {
@@ -81,6 +105,13 @@
       border: 1px solid #eee;
       padding: 20px;
       border-radius: 12px;
+    }
+
+    .testimonial{
+      background:#f9fafb;
+      padding:20px;
+      border-radius:12px;
+      margin-top:15px;
     }
 
     .button-primary {
@@ -118,6 +149,7 @@
 <body>
 
 <header>
+  <div class="trial-ribbon">🎁 Free Trial Lesson</div>
   <h1>Learn Mandarin with Yi</h1>
   <p class="subtitle">
     60‑Minute Private Zoom Classes | 15+ Years Experience | 20,000+ Hours
@@ -131,16 +163,65 @@
   <h2>About Teacher Yi</h2>
   <p class="lang">关于老师</p>
 
-  <p>
-    Hi, I'm Yi. I am a professional Mandarin teacher with over 15 years of teaching experience
-    and more than 20,000 hours of online instruction. I specialize in helping students speak
-    Mandarin confidently through structured and personalized lessons.
-  </p>
+  <div style="display:flex; gap:30px; align-items:center; flex-wrap:wrap; margin-top:20px;">
+    <div style="position:relative;">
+      <img src="profile.jpg" alt="Teacher Yi" style="width:220px; border-radius:16px; box-shadow:0 10px 25px rgba(0,0,0,0.1);" />
+      
+      <div style="position:absolute; bottom:-10px; left:50%; transform:translateX(-50%); background:#c62828; color:white; padding:6px 12px; border-radius:999px; font-size:13px; font-weight:600;">
+        ⭐ 15 Years Experience
+      </div>
+    </div>
 
-  <p class="lang">
-    我是Yi老师，拥有15年以上中文教学经验，累计线上授课超过20000小时。
-    专注于帮助学生通过系统化和个性化课程快速提高中文口语能力。
-  </p>
+    <div style="flex:1; min-width:260px;">
+      <div style="font-size:20px; color:#f59e0b; margin-bottom:8px;">
+        ⭐⭐⭐⭐⭐
+      </div>
+
+      <div style="font-weight:600; margin-bottom:10px;">
+        5.0 Student Rating | 20,000+ Lessons
+      </div>
+
+      <div>
+        <span class="badge">🏆 Top Rated Teacher</span>
+        <span class="badge">🇨🇳 Native Mandarin Speaker</span>
+        <span class="badge">🎯 1-on-1 Coaching</span>
+      </div>
+
+      <p>
+        Hi, I'm Yi. I am a professional Mandarin teacher with over 15 years of teaching experience
+        and more than 20,000 hours of online instruction. I specialize in helping students speak
+        Mandarin confidently through structured and personalized lessons.
+      </p>
+
+      <p class="lang">
+        我是Yi老师，拥有15年以上中文教学经验，累计线上授课超过20000小时。
+        专注于帮助学生通过系统化和个性化课程快速提高中文口语能力。
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2>Student Reviews</h2>
+  <p class="lang">学员评价</p>
+
+  <div class="testimonial">
+    ⭐⭐⭐⭐⭐ "Yi is extremely patient and professional. My Mandarin improved quickly."
+    <br>
+    <span class="lang">Yi老师非常专业有耐心，我的中文进步很快。</span>
+  </div>
+
+  <div class="testimonial">
+    ⭐⭐⭐⭐⭐ "Best Mandarin teacher I've had. Very structured lessons."
+    <br>
+    <span class="lang">最好的中文老师，课程非常系统。</span>
+  </div>
+
+  <div class="testimonial">
+    ⭐⭐⭐⭐⭐ "Highly recommend for beginners and business Mandarin."
+    <br>
+    <span class="lang">非常适合初学者和商务中文学习。</span>
+  </div>
 </section>
 
 <section class="container">
